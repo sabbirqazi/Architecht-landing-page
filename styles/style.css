@@ -6,6 +6,7 @@
     font-family: 'Work Sans', sans-serif;
 
 }
+
 /* navbar */
 .header{
     background: rgba(255, 144, 14, 0.1);
@@ -191,10 +192,14 @@ nav ul{
     border: 1px solid #FF900E;
     border-radius: 8px;
     transition: background 0.3s linear 0.3s;
+    transition: transform 2s ;
+    
 }
+
 .achievement:hover{
-    background: #FF900E;
+    background:#FF900E;
     color: #FFFFFF;
+    transform: rotate(45deg);
 }
 .achievement-info{
     display: flex;
@@ -203,6 +208,104 @@ nav ul{
     align-items: center;
     padding: 55px 0;
     font-size: 1.6rem;
+    
+}
+.achievement-info:hover{
+    transform: rotate(-45deg);
+    
+}
+.achievement-info> img:hover{
+    font-size: 1.8rem;
+}
+/* contact  */
+.contact-section{
+    width: 45%;
+    margin: 0 auto;
+    
+}
+.contact-title{
+    padding: 55px 0;
+    text-align: center;
+}
+.contact-title h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.contact-title p{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #727272;
+}
+input[type=text],
+textarea {
+  width: 100%;
+  padding: 14px;
+  border: 0;
+  background: rgba(255, 144, 14, 0.1);
+  margin-top: 8px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+    color: #FFFFFF;
+    padding: 16px 35px;
+    background: #FF900E;
+    border-radius: 8px;
+    border: 0;
+    font-size: 1.2rem;
+}
+input[type=submit]:hover {
+  background-color: #c59a68;
+}
+label{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #727272;
+}
+input, textarea{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272; 
+}
+
+/* sponsor section */
+.sponsor-section{
+    width: 80%;
+    margin: 0 auto;
+}
+.sponsor-description{
+    text-align: center;
+    margin-top: 70px;
+    padding: 25px;
+}
+.sponsor-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding: 15px 0;
+}
+.sponsor-description p{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272;
+}
+.sponsors{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    
+}
+.sponsor{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.footer{
+    width: 80%;
+    padding: 20px 0;
+    background: rgba(255, 144, 14, 0.1);
+    margin: 0 auto;
+}
+.footer p{
+    text-align: center;
 }
 .hide{display: none;}
 /* responsive  */
@@ -257,5 +360,61 @@ nav ul{
     .feature-title{
         text-align: center;
     }
+    .services-section{
+        flex-direction: column;
     
+        
+    }
+    .service-title{
+        padding: 0;
+        margin-left: 45px;
+    }
+    .service-description{
+        margin-left: 45px;
+    }
+    .service{
+        width: 550px;
+        height: 180px;
+    }
+    .service-right img{
+        width: 100%;
+    }
+    .service-right-bottom{
+        position: relative;
+        bottom: 58px ;
+        right: 40px;
+        width: 171px;
+        height: 100px;
+    }
+    .service-right-bottom-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0;
+        font-size: 1rem;
+        
+    }
+    .achievements{
+        flex-direction: column;
+        align-items: center;
+        gap: 55px;
+    }
+    .sponsors{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .footer{
+        width: 100%;
+    }
+    input[type=submit] {
+        color: #FFFFFF;
+        text-align: center;
+        padding: 16px 120px;
+        background: #FF900E;
+        border-radius: 8px;
+        border: 0;
+        font-size: 1.2rem;
+    }
 } 

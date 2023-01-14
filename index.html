@@ -43,13 +43,13 @@
       </div>
     </section>
     <!-- services section -->
-    <section class="services-section hide">
+    <section class="services-section">
     <div class="services-left">
         <div>
             <div class="service-title">
-                <div class="vertical-line"></div>
+                <div class="vertical-line"></div> 
             <h1>Features you will <br> love & enjoy </h1></div>
-            <p>There are many variations of passages of Lorem Ipsum available, but the <br> majority have suffered alteration in some form, by injected humour, or <br> randomised words which don't look even</p>
+            <p class="service-description">There are many variations of passages of Lorem <br> Ipsum available, but the <br> majority have suffered alteration in <br> some form, by injected humour, or <br> randomised words which don't look even</p>
         </div>
         <div class="service">
          <div class="service-inside">
@@ -85,7 +85,7 @@
     </div>
 </section>
 <!-- achievement section -->
-<section class="achievement-section hide">
+<section class="achievement-section ">
   <div class="achievement-title">
     <h1>Some Facts</h1>
     <p>There are many variations of passages of Lorem Ipsum available, <br> but the majority have suffered alteration.</p>
@@ -120,10 +120,44 @@
   </div>
     </div>
    </div>
-</section class="hide" >
-<!-- sponsor section -->
-<section>
-     
 </section>
+<!-- contact-section -->
+<section class="contact-section">
+  <div  class="contact-title"  >
+    <h1  >Contact Us</h1>
+    <p> for Collaboration</p>
+  </div>
+
+<div class="container">
+  <form action="/form/submit" method="POST">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="name" placeholder="Type your name..">
+    
+    <label for="mail">E-mail Address</label>
+    <input type="text" id="mail" name="e-mail" placeholder="Type your e-mail..">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Type your message.." style="height: 200px"></textarea>
+    <input type="submit" value="Send">
+  </form>
+</div>
+</section>
+<!-- sponsor section -->
+<section class="sponsor-section">
+     <div class="sponsor-description">
+      <h1 class="sponsor-title">Our Sponspors</h1>
+      <p>There are many variations of passages of Lorem Ipsum available, <br> but the majority have suffered alteration.</p>
+     </div>
+     <div class="sponsors">
+      <div class="sponsor"><img src="./images/sponsors/spotify.png" alt=""></div>
+      <div class="sponsor"><img src="./images/sponsors/amazon.png" alt=""></div>
+      <div class="sponsor"><img src="./images/sponsors/google.png" alt=""></div>
+      <div class="sponsor"><img src="./images/sponsors/telerama.png" alt=""></div>
+      <div class="sponsor"><img src="./images/sponsors/figma.png" alt=""></div>
+     </div>
+</section>
+
+<footer class="footer">
+ <p>All rights reserved copyright@2023 startup landing page design</p>
+</footer>
 </body>
 </html>
